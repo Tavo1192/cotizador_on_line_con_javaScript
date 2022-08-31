@@ -54,8 +54,8 @@ function polizaAnual(poliza){
 
 function carritoPoliza(anio,poliza){
 alert(anio+"\n"+poliza)
-let ingresaDinero = alert("podes abonar con debito, credito, MP")
-alert("Muchas Gracias")}
+let ingresaDinero = alert("Contamos con diferentes metodos de pago como debito, credito, MP")
+alert("No te olvides de registrarte y dejarnos tus datos...Muchas Gracias!!")}
 // if(ingresaDinero> poliza){
 //     alert("Tu vuelto es" + (ingresaDinero - poliza))
 // }else{
