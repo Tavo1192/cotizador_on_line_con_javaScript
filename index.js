@@ -9,6 +9,8 @@ marca = parseInt(prompt("tu vehiculo es un: \n1)Ford\n2)Renault\n3)Volskwagen\n4
 }while(marca !=1 && marca !=2 && marca !=3 && marca !=4 && marca !=5)
 }
 
+ 
+
 function muestraAnio(){
 let anio;
 do{    
@@ -26,13 +28,52 @@ switch(anio){
    case 4:
       return "Tu poliza anual para el modelo 2019 es de $90.000 mil pesos";
    case 5:
-      return "Tu poliza anual para el modelo sera calculada por uno de nuestros asesores";
+      return "Tu poliza anual  sera calculada por uno de nuestros asesores";
 
 }}
 
 
+function polizaAnual(poliza){
+    if(poliza === "2022"){
+        return "Tu poliza anual para el modelo 2022 es de $120.000 mil pesos";
+        
+}else if(poliza === "2021"){
+        return "Tu poliza anual para el modelo 2021 es de $110.000 mil pesos";
+
+}else if(poliza === "2020"){
+    return "Tu poliza anual para el modelo 2021 es de $100.000 mil pesos";
+
+}else if(poliza === "2019"){
+    return "Tu poliza anual para el modelo 2021 es de $90.000 mil pesos";
+
+}else(poliza === "Otro")
+    return "Por favor registrate y dejanos tus datos, te contactaremos";
+}
+
+
+
+function carritoPoliza(anio,poliza){
+alert(anio+"\n"+poliza)
+let ingresaDinero = alert("podes abonar con debito, credito, MP")
+alert("Muchas Gracias")}
+// if(ingresaDinero> poliza){
+//     alert("Tu vuelto es" + (ingresaDinero - poliza))
+// }else{
+//     alert("podes abonar con debito, credito, MP")
+// }
+// }
 
 
 ingresaMarca();
-muestraAnio();
+let muestraPoliza = muestraAnio();
+let precioPoliza = polizaAnual(muestraPoliza);
+carritoPoliza(muestraPoliza,precioPoliza);
+
+
+
+
+
+
+
+
 
