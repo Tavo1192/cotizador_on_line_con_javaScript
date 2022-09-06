@@ -30,7 +30,8 @@ switch(anio){
    case 5:
       return "Tu poliza anual  sera calculada por uno de nuestros asesores";
 
-}}
+    }
+}
 
 
 function polizaAnual(poliza){
@@ -45,29 +46,46 @@ function polizaAnual(poliza){
 
 }else if(poliza === "2019"){
     return "Tu poliza anual para el modelo 2021 es de $90.000 mil pesos";
+    
 
 }else(poliza === "Otro")
-    return "Por favor registrate y dejanos tus datos, te contactaremos";
+    return "Como deseas abonar?";
+}
+
+
+/*aca coloco el Array para el desafio y lo saco por consola en forma de tabla*/
+function carritoPoliza(anio,poliza){
+alert(anio+"\n"+poliza)
+const modoPAgo = ["\n1)credito","\n2)debito","\n3)transferencia","\n4)mercado pago","\n5)o puedes elejir otra opcion"]
+const precio =  [];
+console.table(modoPAgo)
+ 
+
 }
 
 
 
-function carritoPoliza(anio,poliza){
-alert(anio+"\n"+poliza)
-let ingresaDinero = alert("Contamos con diferentes metodos de pago como debito, credito, MP")
-alert("No te olvides de registrarte y dejarnos tus datos...Muchas Gracias!!")}
-// if(ingresaDinero> poliza){
-//     alert("Tu vuelto es" + (ingresaDinero - poliza))
-// }else{
-//     alert("podes abonar con debito, credito, MP")
-// }
-// }
+   
+    
+
+
+
+
+
+
+
+
+
+
+
 
 
 ingresaMarca();
-let muestraPoliza = muestraAnio();
-let precioPoliza = polizaAnual(muestraPoliza);
+const muestraPoliza = muestraAnio();
+const precioPoliza = polizaAnual(muestraPoliza);
 carritoPoliza(muestraPoliza,precioPoliza);
+
+
 
 
 
