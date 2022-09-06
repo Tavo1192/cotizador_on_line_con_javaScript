@@ -53,32 +53,18 @@ function polizaAnual(poliza){
 }
 
 
-/*aca coloco el Array para el desafio y lo saco por consola en forma de tabla*/
+/*aca coloco el Array y lo saco por consola en forma de tabla*/
 function carritoPoliza(anio,poliza){
 alert(anio+"\n"+poliza)
-const modoPAgo = ["\n1)credito","\n2)debito","\n3)transferencia","\n4)mercado pago","\n5)o puedes elejir otra opcion"]
-const precio =  [];
+const modoPAgo = ["\n1)credito","\n2)debito","\n3)transferencia","\n4)mercado pago","\n5)o puedes elejir otra opcion"];
 console.table(modoPAgo)
- 
-
 }
+
 
 
 
    
     
-
-
-
-
-
-
-
-
-
-
-
-
 
 ingresaMarca();
 const muestraPoliza = muestraAnio();
