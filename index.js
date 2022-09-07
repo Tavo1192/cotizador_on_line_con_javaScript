@@ -56,15 +56,11 @@ function polizaAnual(poliza){
 /*aca coloco el Array y lo saco por consola en forma de tabla*/
 function carritoPoliza(anio,poliza){
 alert(anio+"\n"+poliza)
+alert("Contrata tu seguro de manera on-line y te descontamos 30% en el total de la poliza");
 const modoPAgo = ["\n1)credito","\n2)debito","\n3)transferencia","\n4)mercado pago","\n5)o puedes elejir otra opcion"];
 console.table(modoPAgo)
+
 }
-
-
-
-
-   
-    
 
 ingresaMarca();
 const muestraPoliza = muestraAnio();
