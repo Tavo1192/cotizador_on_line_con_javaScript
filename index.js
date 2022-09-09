@@ -87,9 +87,27 @@ for (let i = 0; i <= 4; i++){
 
 const descuento = [
     {modelo: "Autos modelo 2022 descuento suscripcion on-line de", descuento: "$36.000"}, 
+    {modelo: "Autos modelo 2010", descuento: "debes comunicarte con nuestros asesores"}
 ]
 
 const resultado = descuento.find((el) => el.modelo === "Autos modelo 2022 descuento suscripcion on-line de")
+const resultado1 = descuento.find((el) => el.modelo === "Autos modelo 2010")
+
+/* añado metdo filter*/
+const descuento2 = [
+    {modelo: "Autos modelo 2022 descuento suscripcion on-line de", descuento:36.000},
+    {modelo: "Autos modelo 2021 descuento suscripcion on-line de", descuento:33.000},
+    {modelo: "Autos modelo 2020 descuento suscripcion on-line de", descuento:30.000}, 
+    {modelo: "Autos modelo 2010", descuento: "debes comunicarte con nuestros asesores"}
+]
+
+const resultadoA = descuento.filter((el) => el.modelo.includes ("Autos modelo 2010"));
+const resultadoB = descuento.filter((el) => el.descuento < 27000)
+
+console.table(resultadoA)
+console.table(resultadoB)
+
+
 
 /*------------------------------*/
 
