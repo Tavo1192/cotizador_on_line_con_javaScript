@@ -1,15 +1,30 @@
-// /*  cotizador on-line para vehiculos*/
+/*  cotizador on-line para vehiculos*/
+alert("Bienvenido/a al cotizador de seguros On-line Kagler");
+let registroNombre = prompt("Ingresa tu nombre y apellido para poder registrarte, gracias!!");
+if (registroNombre ==""){
+    alert("Ingresa tu nombre por favor!!!" );
+}
+else{
+    let pagar;
+    do{
+        console.table(alert(registroNombre + " como deseas abonar? \n 1- tarjeta de credito \n 2- tarjeta de debito \n 3- transferencia \n 0- Salir"));
+        pagar= Number(prompt("Elegi el numero de la opcion para abonar"));
+        alert("Excelente!! tu descuento es del 30% sobre el valor total de la poliza");
+    }while(pagar == 0);
+        alert("El siguiente paso es " + registroNombre)
+    }     
+/*----------------------------------------------------*/     
 
 function ingresaMarca(){
-alert("Bienvenido/a al cotizador de seguros On-line Kagler");
-let marca = alert("Selecciona la marca de tu vehiculo");
+
+let marca = alert("Seleccionar la marca de tu vehiculo");
 do{    
 marca = parseInt(prompt("tu vehiculo es un: \n1)Ford\n2)Renault\n3)Volskwagen\n4)Fiat\n5)Otro?"))
 /*esto sera luego una pestaña desplegable que entregue la opcion de marca del vehiculo*/
 }while(marca !=1 && marca !=2 && marca !=3 && marca !=4 && marca !=5)
 }
 
- 
+/*-----------------------------------------------------*/ 
 
 function muestraAnio(){
 let anio;
@@ -49,33 +64,45 @@ function polizaAnual(poliza){
     
 
 }else(poliza === "Otro")
-    return "Como deseas abonar?";
+    return "Contrata tu seguro de manera on-line y te descontamos 30% en el total de la poliza";
+
 }
 
 
-/*aca coloco el Array y lo saco por consola en forma de tabla*/
+/*aca coloco el Array y lo saco por consola en forma de tabla donde se muestran las opciones de pago*/
 
 function carritoPoliza(anio,poliza){
 alert(anio+"\n"+poliza)
-alert("Contrata tu seguro de manera on-line y te descontamos 30% en el total de la poliza");
-const modoPAgo = ["\n1)credito","\n2)debito","\n3)transferencia","\n4)mercado pago","\n5)o puedes elejir otra opcion"];
-console.table(modoPAgo)
+
 }
 
-/* añado otros arrays y un for. Luego se define el porcentaje a descontar por promo "cotiza on-line"*/
+/* añado otros arrays en 2 dimenciones, lo saco por tabla donde muestra el total a descontar"*/
 
 const pagoDescuento = [["120000",((120000*30)/100)], ["110000", ((110000*30)/100)], ["100000", ((100000*30)/100)], ["90000", ((90000*30)/100)]];
 for (let i = 0; i <= 4; i++){
 }
 
+
+/* añado metodo find*/
+
+const descuento = [
+    {modelo: "Autos modelo 2022 descuento suscripcion on-line de", descuento: "$36.000"}, 
+]
+
+const resultado = descuento.find((el) => el.modelo === "Autos modelo 2022 descuento suscripcion on-line de")
+
+/*------------------------------*/
+
 console.table(pagoDescuento)
+console.table(resultado)
 
-
-
+/*------------------------------*/
 ingresaMarca();
 const muestraPoliza = muestraAnio();
 const precioPoliza = polizaAnual(muestraPoliza);
 carritoPoliza(muestraPoliza,precioPoliza);
+
+
 
 
 
