@@ -13,7 +13,7 @@ marca = parseInt(prompt("tu vehiculo es un: \n1)Ford\n2)Renault\n3)Volskwagen\n4
 
 function muestraAnio(){
 let anio;
-do{    
+do{ 
 anio = parseInt(prompt("Por favor indicanos el año de patentamiento tu vehiculo: \n1)2022\n2)2021\n3)2020\n4)2019\n5)Otro?"))
 /*esto sera luego una pestaña desplegable que entregue la opcion de año de patentamiento del vehiculo*/
 }while(anio !=1 && anio !=2 && anio !=3 && anio !=4 && anio !=5)
@@ -54,13 +54,23 @@ function polizaAnual(poliza){
 
 
 /*aca coloco el Array y lo saco por consola en forma de tabla*/
+
 function carritoPoliza(anio,poliza){
 alert(anio+"\n"+poliza)
 alert("Contrata tu seguro de manera on-line y te descontamos 30% en el total de la poliza");
 const modoPAgo = ["\n1)credito","\n2)debito","\n3)transferencia","\n4)mercado pago","\n5)o puedes elejir otra opcion"];
 console.table(modoPAgo)
-
 }
+
+/* añado otros arrays y un for. Luego se define el porcentaje a descontar por promo "cotiza on-line"*/
+
+const pagoDescuento = [["120000",((120000*30)/100)], ["110000", ((110000*30)/100)], ["100000", ((100000*30)/100)], ["90000", ((90000*30)/100)]];
+for (let i = 0; i <= 4; i++){
+}
+
+console.table(pagoDescuento)
+
+
 
 ingresaMarca();
 const muestraPoliza = muestraAnio();
